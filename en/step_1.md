@@ -1,59 +1,25 @@
-## Introduction
+When creating random numbers with Python, you can use a **seed** to generate the numbers. If you start from the same seed, and ask for the same sequence of numbers, then you can create repeatable randomness. This can be useful for many different things including:
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
+- for positioning objects on the screen. If you're [drawing the night sky](https://trinket.io/python/c67c589510?outputOnly=true&runOption=run){:target="_blank"}, you don't want to pick where every star goes!
+- as a cheat, like with the dice roll in the [Hello World](https://projects.raspberrypi.org/en/projects/hello-world) project, and also to prevent cheating if you are making a game
 
-### What you will make
+Here is an example using `seed` as a cheat:
 
---- no-print ---
-Add instructions for interacting with the embedded content here.
+```python
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
---- /no-print ---
+from random import randint, seed
 
---- print-only ---
-![Complete project](images/showcase_static.png)
---- /print-only ---
+def loaded_dice():
+  # Set the seed so loaded_dice always rolls the same number
+  seed('dice')
+  roll = randint(1,6)
+  print('You rolled', roll)
 
---- collapse ---
----
-title: What you will need
----
-### Hardware
+```
+This code outputs:
 
-+ A computer or tablet capable of running Scratch 3
+```
+You rolled 4
+```
 
-### Software
-
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
-
-### Downloads
-
-+ Download the project [starter file](http://rpf.io/p/en/projectName-go){:target="_blank"} if working offline
-
---- /collapse ---
-
---- collapse ---
----
-title: What you will learn
----
-
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
-
---- /collapse ---
-
---- collapse ---
----
-title: Additional information for educators
----
-
-You can download the completed project [here](http://rpf.io/p/en/projectName-get){:target="_blank"}.
-
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/projectName/print){:target="_blank"}.
-
---- /collapse ---
+**Tip:** Seed can be a number, or a string of text. That means it can be an emoji too!
