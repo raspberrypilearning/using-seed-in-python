@@ -1,11 +1,11 @@
-When creating random numbers with Python, you can use a **seed** to generate the numbers. If you start from the same seed, and ask for the same sequence of numbers, then you can create repeatable randomness. This can be useful for many different things including:
+عند إنشاء أرقام عشوائية باستخدام لغة Python، يمكنك استخدام الايعاز **seed بذور** لتوليد الأرقام. إذا بدأت من نفس البذرة ، وطلبت نفس تسلسل الأرقام ، فيمكنك إنشاء عشوائية قابلة للتكرار. يمكن أن يكون هذا مفيدًا للعديد من الأشياء المختلفة بما في ذلك:
 
-- for positioning objects on the screen. If you're [drawing the night sky](https://trinket.io/python/c67c589510?outputOnly=true&runOption=run){:target="_blank"}, you don't want to pick where every star goes!
-- as a cheat, like with the dice roll in the [Hello World](https://projects.raspberrypi.org/en/projects/hello-world) project
-- to create worlds (like in Minecraft), deciding where resources and creatures are randomly placed
+- لوضع الأشياء على الشاشة. إذا كنت [ ترسم سماء الليل ](https://trinket.io/python/c67c589510?outputOnly=true&runOption=run){:target="_blank"}، لا تريد أن تختار أين يذهب كل نجم!
+- كغش، كما هو الحال مع رمي النرد في مشروع [مرحبا بالعالم ](https://projects.raspberrypi.org/en/projects/hello-world)
+- لإنشاء عوالم (كما في Minecraft) ، وتحديد مكان وضع المصادر والمخلوقات بشكل عشوائي
 
 
-Here is an example using `seed` as a cheat:
+فيما يلي مثال باستخدام ` seed ` كغش:
 
 ```python
 
@@ -18,10 +18,10 @@ def loaded_dice():
   print('You rolled', roll)
 
 ```
-This code outputs:
+الناتج من هذه الشفرة البرمجية:
 
 ```
 You rolled 4
 ```
 
-**Tip:** Seed can be a number, or a string of text. That means it can be an emoji too!
+**نصيحة:** يمكن أن تكون البذور رقمًا أو سلسلة نصية. هذا يعني أنه يمكن أن يكون إيموجي أيضًا!
