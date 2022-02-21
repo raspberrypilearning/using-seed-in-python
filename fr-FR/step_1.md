@@ -1,27 +1,27 @@
-When creating random numbers with Python, you can use a **seed** to generate the numbers. If you start from the same seed, and ask for the same sequence of numbers, then you can create repeatable randomness. This can be useful for many different things including:
+Lors de la création de nombres aléatoires avec Python, tu peux utiliser **seed** pour générer les nombres. Si tu pars du même seed et demandes la même séquence de nombres, tu peux créer un caractère aléatoire imprévisible. Cela peut être utile pour de nombreuses choses différentes, notamment :
 
-- for positioning objects on the screen. If you're [drawing the night sky](https://trinket.io/python/c67c589510?outputOnly=true&runOption=run){:target="_blank"}, you don't want to pick where every star goes!
-- as a cheat, like with the dice roll in the [Hello World](https://projects.raspberrypi.org/en/projects/hello-world) project
-- to create worlds (like in Minecraft), deciding where resources and creatures are randomly placed
+- pour positionner des objets sur l'écran. Si tu [dessines le ciel nocturne](https://trinket.io/python/c67c589510?outputOnly=true&runOption=run){:target="_blank"}, tu ne veux pas choisir où va chaque étoile !
+- comme un tricheur, comme avec le lancer de dés dans le projet [Hello World](https://projects.raspberrypi.org/en/projects/hello-world)
+- pour créer des mondes (comme dans Minecraft), en décidant où les ressources et les créatures sont placées au hasard
 
 
-Here is an example using `seed` as a cheat:
+Voici un exemple utilisant `seed` comme un tricheur :
 
 ```python
 
 from random import randint, seed
 
 def loaded_dice():
-  # Set the seed so loaded_dice always rolls the same number
+  # Régler le seed pour que loaded_dice obtienne toujours le même nombre
   seed('dice')
   roll = randint(1,6)
-  print('You rolled', roll)
+  print( 'Tu as obtenu', roll)
 
 ```
-This code outputs:
+Ce code affiche :
 
 ```
-You rolled 4
+Tu as obtenu 4
 ```
 
-**Tip:** Seed can be a number, or a string of text. That means it can be an emoji too!
+**Astuce :** La valeur de départ peut être un nombre ou une chaîne de texte. Cela signifie que cela peut aussi être un emoji !
