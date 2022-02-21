@@ -1,27 +1,27 @@
-When creating random numbers with Python, you can use a **seed** to generate the numbers. If you start from the same seed, and ask for the same sequence of numbers, then you can create repeatable randomness. This can be useful for many different things including:
+Pythonで乱数を作成する場合、乱数を生成する **seed** （シード）を使うことができます。 同じシードから始めて、同じ数字の並びを要求すると、再現性のあるランダム性を作ることができます。 これは、次のようなさまざまな用途に役立ちます。
 
-- for positioning objects on the screen. If you're [drawing the night sky](https://trinket.io/python/c67c589510?outputOnly=true&runOption=run){:target="_blank"}, you don't want to pick where every star goes!
-- as a cheat, like with the dice roll in the [Hello World](https://projects.raspberrypi.org/en/projects/hello-world) project
-- to create worlds (like in Minecraft), deciding where resources and creatures are randomly placed
+- 画面上にオブジェクトを配置するため。 [夜空を描く](https://trinket.io/python/c67c589510?outputOnly=true&runOption=run){:target="_blank"}場合、星の一つ一つをどこに置くか決めたくはないでしょう!
+- [ハローワールド](https://projects.raspberrypi.org/en/projects/hello-world) プロジェクトのサイコロ振りのようにチートとして
+- （Minecraftのように）世界を作成し、リソースとクリーチャーをランダムに配置する場所を決めるため
 
 
-Here is an example using `seed` as a cheat:
+チートとして `seed` を使用する例を次に示します。
 
 ```python
 
 from random import randint, seed
 
 def loaded_dice():
-  # Set the seed so loaded_dice always rolls the same number
+  # loaded_dice関数が一連の数字を出すようにシードを設定する
   seed('dice')
   roll = randint(1,6)
-  print('You rolled', roll)
+  print('サイコロの目はこれでした ', roll)
 
 ```
-This code outputs:
+このコードは以下を出力します。
 
 ```
-You rolled 4
+さいころの目は4でした
 ```
 
-**Tip:** Seed can be a number, or a string of text. That means it can be an emoji too!
+**ヒント：** シードは、数値またはテキストの文字列にすることができます。 つまり、絵文字も使えるということです。
