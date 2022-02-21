@@ -1,27 +1,27 @@
-When creating random numbers with Python, you can use a **seed** to generate the numbers. If you start from the same seed, and ask for the same sequence of numbers, then you can create repeatable randomness. This can be useful for many different things including:
+Si quieres crear números aleatorios con Python, puedes usar la función **seed** (semilla) para generar los números. Si comienzas desde la misma seed (semilla) y pides la misma secuencia de números, puedes crear una aleatoriedad repetible. Esto te puede ser útil para muchas cosas, incluyendo las siguientes:
 
-- for positioning objects on the screen. If you're [drawing the night sky](https://trinket.io/python/c67c589510?outputOnly=true&runOption=run){:target="_blank"}, you don't want to pick where every star goes!
-- as a cheat, like with the dice roll in the [Hello World](https://projects.raspberrypi.org/en/projects/hello-world) project
-- to create worlds (like in Minecraft), deciding where resources and creatures are randomly placed
+- para posicionar objetos en la pantalla. Si estás trabajando en el proyecto [dibujando el cielo nocturno](https://trinket.io/python/c67c589510?outputOnly=true&runOption=run){:target="_blank"}, ¡no querrás elegir la posición para cada estrella!
+- para usar como atajo, como cuando tires los dados en el proyecto [Hola Mundo](https://projects.raspberrypi.org/en/projects/hello-world)
+- para crear mundos (como en Minecraft), decidiendo aleatoriamente la ubicación de los recursos y las criaturas
 
 
-Here is an example using `seed` as a cheat:
+A continuación hay un ejemplo donde se usa `seed` (semilla) como atajo:
 
 ```python
 
 from random import randint, seed
 
-def loaded_dice():
-  # Set the seed so loaded_dice always rolls the same number
-  seed('dice')
-  roll = randint(1,6)
-  print('You rolled', roll)
+def dado_cargado():
+  # Establece el valor para seed (semilla) de tal manera que dado_cargado siempre arroje el mismo número
+  seed('dado')
+  tirar_dado = randint(1,6)
+  print('Sacaste un', tirar_dado)
 
 ```
-This code outputs:
+Este código da como resultado:
 
 ```
-You rolled 4
+Sacaste un 4
 ```
 
-**Tip:** Seed can be a number, or a string of text. That means it can be an emoji too!
+**Sugerencia:** Seed (semilla) puede ser un número o una cadena de texto. ¡Eso significa que también puede ser un emoji!
