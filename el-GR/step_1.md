@@ -1,27 +1,27 @@
-When creating random numbers with Python, you can use a **seed** to generate the numbers. If you start from the same seed, and ask for the same sequence of numbers, then you can create repeatable randomness. This can be useful for many different things including:
+Όταν δημιουργείς τυχαίους αριθμούς με την Python, μπορείς να χρησιμοποιήσεις τη συνάρτηση </strong>seed (σπόρος) **για να δημιουργήσεις τους αριθμούς. Εάν ξεκινήσεις από τον ίδιο σπόρο και ζητήσεις την ίδια ακολουθία αριθμών, τότε μπορείς να δημιουργήσεις επαναλαμβανόμενη τυχαιότητα. Αυτό μπορεί να είναι χρήσιμο για πολλά διαφορετικά πράγματα, όπως:</p>
 
-- for positioning objects on the screen. If you're [drawing the night sky](https://trinket.io/python/c67c589510?outputOnly=true&runOption=run){:target="_blank"}, you don't want to pick where every star goes!
-- as a cheat, like with the dice roll in the [Hello World](https://projects.raspberrypi.org/en/projects/hello-world) project
-- to create worlds (like in Minecraft), deciding where resources and creatures are randomly placed
+- για την τοποθέτηση αντικειμένων στην οθόνη. Αν [σχεδιάζεις τον νυχτερινό ουρανό](https://trinket.io/python/c67c589510?outputOnly=true&runOption=run){target="_blank"}, δεν θέλεις να επιλέγεις πού τοποθετείται το κάθε αστέρι!
+- στη ρίψη ζαριών με εξαπάτηση στο έργο [Γεια σου Κόσμε](https://projects.raspberrypi.org/en/projects/hello-world)
+- για να δημιουργήσεις κόσμους (όπως στο Minecraft), καθορίζοντας πού τοποθετούνται τυχαία οι πόροι και τα πλάσματα
 
 
-Here is an example using `seed` as a cheat:
+Ακολουθεί ένα παράδειγμα που χρησιμοποιεί τη συνάρτηση `seed` με εξαπάτηση:
 
 ```python
 
 from random import randint, seed
 
 def loaded_dice():
-  # Set a seed to always choose the same number
+  # Ορισμός του σπόρου (seed) έτσι ώστε να επιλέγεται ο ίδιος αριθμός
   seed('dice')
   roll = randint(1,6)
-  print('You rolled', roll)
+  print('Εφερες', roll)
 
 ```
-This code outputs:
+Αυτός ο κώδικας βγάζει:
 
 ```
-You rolled 4
+Έφερες 4
 ```
 
-**Tip:** Seed can be a number, or a string of text. That means it can be an emoji too!
+**Συμβουλή:** Ο σπόρος μπορεί να είναι ένας αριθμός ή μια συμβολοσειρά κειμένου. Αυτό σημαίνει ότι μπορεί να είναι ακόμη και emoji!
