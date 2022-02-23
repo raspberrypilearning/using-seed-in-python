@@ -12,7 +12,7 @@ Here is an example using `seed` as a cheat:
 from random import randint, seed
 
 def loaded_dice():
-  # Set the seed so loaded_dice always rolls the same number
+  # Set a seed to always choose the same number
   seed('dice')
   roll = randint(1,6)
   print('You rolled', roll)
