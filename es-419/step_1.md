@@ -11,11 +11,11 @@ A continuación hay un ejemplo donde se usa `seed` (semilla) como atajo:
 
 from random import randint, seed
 
-def dado_cargado():
-  # Establece el valor para seed (semilla) de tal manera que dado_cargado siempre arroje el mismo número
-  seed('dado')
-  tirar_dado = randint(1,6)
-  print('Sacaste un', tirar_dado)
+def loaded_dice():
+  # Set a seed to always choose the same number
+  seed('dice')
+  roll = randint(1,6)
+  print('You rolled', roll)
 
 ```
 Este código da como resultado:
