@@ -12,10 +12,10 @@ Voici un exemple utilisant `seed` comme un tricheur :
 from random import randint, seed
 
 def loaded_dice():
-  # Régler le seed pour que loaded_dice obtienne toujours le même nombre
+  # Set a seed to always choose the same number
   seed('dice')
   roll = randint(1,6)
-  print( 'Tu as obtenu', roll)
+  print('You rolled', roll)
 
 ```
 Ce code affiche :
