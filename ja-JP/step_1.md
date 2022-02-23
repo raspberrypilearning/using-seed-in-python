@@ -12,10 +12,10 @@ Pythonで乱数を作成する場合、乱数を生成する **seed** （シー�
 from random import randint, seed
 
 def loaded_dice():
-  # loaded_dice関数が一連の数字を出すようにシードを設定する
+  # Set a seed to always choose the same number
   seed('dice')
   roll = randint(1,6)
-  print('サイコロの目はこれでした ', roll)
+  print('You rolled', roll)
 
 ```
 このコードは以下を出力します。
