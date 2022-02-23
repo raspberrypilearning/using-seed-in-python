@@ -11,11 +11,11 @@ Hier is een voorbeeld waarin `seed` als cheat wordt gebruikt:
 
 from random import randint, seed
 
-def nep_dobbelsteen():
-  # Stel de seed zo in dat nep_dobbelsteen altijd hetzelfde getal gooit
+def loaded_dice():
+  # Set a seed to always choose the same number
   seed('dice')
-  worp= randint(1,6)
-  print('Je gooide', worp)
+  roll = randint(1,6)
+  print('You rolled', roll)
 
 ```
 Deze code geeft het volgende weer:
