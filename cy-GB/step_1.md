@@ -1,27 +1,27 @@
-When creating random numbers with Python, you can use a **seed** to generate the numbers. If you start from the same seed, and ask for the same sequence of numbers, then you can create repeatable randomness. This can be useful for many different things including:
+Wrth greu rhifau ar hap gyda Python, fe allwch chi ddefnyddio **dosbarthiad** i gynhyrchu'r rhifau. Os byddwch chi'n dechrau gyda'r un dosbarthiad ac yn gofyn am yr un dilyniant o rifau, fe allwch chi greu nodwedd ar hap y gellir ei hailadrodd. Fe allai hyn fod yn ddefnyddiol i nifer o wahanol bethau, gan gynnwys:
 
-- for positioning objects on the screen. If you're [drawing the night sky](https://trinket.io/python/c67c589510?outputOnly=true&runOption=run){:target="_blank"}, you don't want to pick where every star goes!
-- as a cheat, like with the dice roll in the [Hello World](https://projects.raspberrypi.org/en/projects/hello-world) project
-- to create worlds (like in Minecraft), deciding where resources and creatures are randomly placed
+- lleoli gwrthrychau ar y sgrin. Os ydych chi'n [llunio awyr y nos](https://trinket.io/python/c67c589510?outputOnly=true&runOption=run){:target="_blank"}, dydych chi ddim eisiau gorfod pigo safle pob seren!
+- fel twyll, er enghraifft wrth daflu'r dis yn y prosiect [Helo fyd](https://projects.raspberrypi.org/en/projects/hello-world)
+- creu bydoedd (fel yn Minecraft), gan benderfynu ble mae adnoddau a chreaduriaid yn cael eu lleoli ar hap
 
 
-Here is an example using `seed` as a cheat:
+Dyma enghraifft yn defnyddio `dosbarthiad` fel twyll:
 
 ```python
 
 from random import randint, seed
 
 def loaded_dice():
-  # Set a seed to always choose the same number
-  seed('dice')
-  roll = randint(1,6)
-  print('You rolled', roll)
+  # Gosodwch ddosbarthiad i ddewis yr un rhif bob tro
+  seed('dis')
+  tafliad = randint(1,6)
+  print('Rydych chi wedi taflu', tafliad)
 
 ```
-This code outputs:
+Mae'r cod hwn yn allbynnu:
 
 ```
-You rolled 4
+Rydych chi wedi taflu 4
 ```
 
-**Tip:** Seed can be a number, or a string of text. That means it can be an emoji too!
+**Cyngor:** Mae dosbarthiad yn gallu bod yn rhif neu'n llinyn testun. Mae hynny'n golygu ei fod yn gallu bod yn emoji hefyd!
