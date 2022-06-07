@@ -1,27 +1,27 @@
-When creating random numbers with Python, you can use a **seed** to generate the numbers. If you start from the same seed, and ask for the same sequence of numbers, then you can create repeatable randomness. This can be useful for many different things including:
+Ao criar números aleatórios com Python, você pode usar uma **seed** para gerar os números. Se você começar da mesma seed e pedir a mesma sequência de números, poderá criar uma pseudo aleatoriadades. Algo que parece aleatório, mas não é. Isso pode ser útil para muitas coisas diferentes, incluindo:
 
-- for positioning objects on the screen. If you're [drawing the night sky](https://trinket.io/python/c67c589510?outputOnly=true&runOption=run){:target="_blank"}, you don't want to pick where every star goes!
-- as a cheat, like with the dice roll in the [Hello World](https://projects.raspberrypi.org/en/projects/hello-world) project
-- to create worlds (like in Minecraft), deciding where resources and creatures are randomly placed
+- para posicionar objetos na tela. Se você está [desenhando o céu noturno](https://trinket.io/python/c67c589510?outputOnly=true&runOption=run){:target="_blank"}, você não quer escolher para onde cada estrela vai!
+- para uma trapaça, como com o lançamento de dados no projeto [Hello World](https://projects.raspberrypi.org/en/projects/hello-world)
+- para criar mundos (como no Minecraft), decidindo onde os recursos e as criaturas são colocadas aleatoriamente
 
 
-Here is an example using `seed` as a cheat:
+Aqui está um exemplo usando `seed` como trapaça:
 
 ```python
 
 from random import randint, seed
 
-def loaded_dice():
-  # Set a seed to always choose the same number
+def load_dice():
+  # Configura uma seed para sempre escolher o mesmo número
   seed('dice')
   roll = randint(1,6)
-  print('You rolled', roll)
+  print('Você rola', rola)
 
 ```
-This code outputs:
+Este código gera:
 
 ```
-You rolled 4
+Você tirou o número 4
 ```
 
-**Tip:** Seed can be a number, or a string of text. That means it can be an emoji too!
+**Dica:** Seed pode ser um número ou uma sequência de texto. Isso significa que pode ser um emoji também!
