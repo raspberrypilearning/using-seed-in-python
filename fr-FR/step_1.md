@@ -11,11 +11,11 @@ Voici un exemple utilisant `seed` comme un tricheur :
 
 from random import randint, seed
 
-def loaded_dice():
-  # Set a seed to always choose the same number
-  seed('dice')
+def de_charge():
+  # Défini une seed pour choisir toujours le même numéro
+  seed('de')
   roll = randint(1,6)
-  print('You rolled', roll)
+  print('Tu as obtenu', roule)
 
 ```
 Ce code affiche :
