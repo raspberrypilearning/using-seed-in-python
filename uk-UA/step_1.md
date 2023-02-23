@@ -1,27 +1,27 @@
-When creating random numbers with Python, you can use a **seed** to generate the numbers. If you start from the same seed, and ask for the same sequence of numbers, then you can create repeatable randomness. This can be useful for many different things including:
+Створюючи випадкові числа у Python, ти можеш використати **seed**, щоб генерувати числа. Якщо ти використовуєш один і той же seed, і задаєш одну і ту ж послідовність чисел, то можеш створити повторювану випадковість. Це може бути корисно в багатьох випадках, наприклад:
 
-- for positioning objects on the screen. If you're [drawing the night sky](https://trinket.io/python/c67c589510?outputOnly=true&runOption=run){:target="_blank"}, you don't want to pick where every star goes!
-- as a cheat, like with the dice roll in the [Hello World](https://projects.raspberrypi.org/en/projects/hello-world) project
-- to create worlds (like in Minecraft), deciding where resources and creatures are randomly placed
+- для розташування об'єктів на екрані. Якщо ти [малюєш зоряне небо](https://trinket.io/python/c67c589510?outputOnly=true&runOption=run){:target="_blank"}, ти ж не хочеш самостійно обирати, куди впаде кожна зірка!
+- як чит-код, як у випадку з киданням гральних кубиків у проєкті [Привіт, світ](https://projects.raspberrypi.org/en/projects/hello-world) project
+- для створення світів (як у Minecraft), вирішуючи, де випадковим чином розміщувати ресурси та істоти
 
 
-Here is an example using `seed` as a cheat:
+Ось приклад використання `seed` як чит-коду:
 
 ```python
 
 from random import randint, seed
 
-def loaded_dice():
-  # Set a seed to always choose the same number
-  seed('dice')
+def завантажені_кубики():
+  # Встанови seed, щоб завжди використовувати це число
+  seed('кубики')
   roll = randint(1,6)
-  print('You rolled', roll)
+  print('Тобі випало:', roll)
 
 ```
-This code outputs:
+Цей код виведе:
 
 ```
-You rolled 4
+Тобі випало: 4
 ```
 
-**Tip:** Seed can be a number, or a string of text. That means it can be an emoji too!
+**Порада:** Seed може бути як числом, так і текстом. Це означає, що він теж може бути емодзі!
