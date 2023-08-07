@@ -3,6 +3,7 @@ When creating random numbers with Python, you can use a **seed** to generate the
 - for positioning objects on the screen. If you're drawing the night sky, you don't want to pick where every star goes!
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/dodge-asteroids-example" width="600" height="700" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+
   
 - as a cheat, like with the dice roll in the [Hello World](https://projects.raspberrypi.org/en/projects/hello-world) project
 - to create worlds (like in Minecraft), deciding where resources and creatures are randomly placed
