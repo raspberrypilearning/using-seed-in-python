@@ -14,8 +14,8 @@ from random import randint, seed
 def load_dice():
   # Configura uma seed para sempre escolher o mesmo número
   seed('dice')
-  roll = randint(1,6)
-  print('Você rola', rola)
+  rola = randint(1,6)
+  print('Você tirou o número', rola)
 
 ```
 Este código gera:
