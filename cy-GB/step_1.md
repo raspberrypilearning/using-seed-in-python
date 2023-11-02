@@ -1,8 +1,12 @@
 Wrth greu rhifau ar hap gyda Python, fe allwch chi ddefnyddio **dosbarthiad** i gynhyrchu'r rhifau. Os byddwch chi'n dechrau gyda'r un dosbarthiad ac yn gofyn am yr un dilyniant o rifau, fe allwch chi greu nodwedd ar hap y gellir ei hailadrodd. Fe allai hyn fod yn ddefnyddiol i nifer o wahanol bethau, gan gynnwys:
 
-- lleoli gwrthrychau ar y sgrin. Os ydych chi'n [llunio awyr y nos](https://trinket.io/python/c67c589510?outputOnly=true&runOption=run){:target="_blank"}, dydych chi ddim eisiau gorfod pigo safle pob seren!
-- fel twyll, er enghraifft wrth daflu'r dis yn y prosiect [Helo fyd](https://projects.raspberrypi.org/en/projects/hello-world)
-- creu bydoedd (fel yn Minecraft), gan benderfynu ble mae adnoddau a chreaduriaid yn cael eu lleoli ar hap
+- lleoli gwrthrychau ar y sgrin. If you're drawing an asteroid field, you don't want to pick where each rock goes!
+
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/dodge-asteroids-example" width="600" height="700" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+</iframe>
+
+- as a cheat, like with the dice roll in the [Hello World](https://projects.raspberrypi.org/en/projects/hello-world) project
+- to create worlds (like in Minecraft), deciding where resources and creatures are randomly placed
 
 
 Dyma enghraifft yn defnyddio `dosbarthiad` fel twyll:
