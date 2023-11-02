@@ -1,8 +1,12 @@
 Створюючи випадкові числа у Python, ти можеш використати **seed**, щоб генерувати числа. Якщо ти використовуєш один і той же seed, і задаєш одну і ту ж послідовність чисел, то можеш створити повторювану випадковість. Це може бути корисно в багатьох випадках, наприклад:
 
-- для розташування об'єктів на екрані. Якщо ти [малюєш зоряне небо](https://trinket.io/python/c67c589510?outputOnly=true&runOption=run){:target="_blank"}, ти ж не хочеш самостійно обирати, куди впаде кожна зірка!
-- як чит-код, як у випадку з киданням гральних кубиків у проєкті [Привіт, світ](https://projects.raspberrypi.org/en/projects/hello-world) project
-- для створення світів (як у Minecraft), вирішуючи, де випадковим чином розміщувати ресурси та істоти
+- для розташування об'єктів на екрані. If you're drawing an asteroid field, you don't want to pick where each rock goes!
+
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/dodge-asteroids-example" width="600" height="700" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+</iframe>
+
+- as a cheat, like with the dice roll in the [Hello World](https://projects.raspberrypi.org/en/projects/hello-world) project
+- to create worlds (like in Minecraft), deciding where resources and creatures are randomly placed
 
 
 Ось приклад використання `seed` як чит-коду:
