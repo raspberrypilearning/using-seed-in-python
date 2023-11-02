@@ -1,8 +1,12 @@
 Όταν δημιουργείς τυχαίους αριθμούς με την Python, μπορείς να χρησιμοποιήσεις τη συνάρτηση </strong>seed (σπόρος) **για να δημιουργήσεις τους αριθμούς. Εάν ξεκινήσεις από τον ίδιο σπόρο και ζητήσεις την ίδια ακολουθία αριθμών, τότε μπορείς να δημιουργήσεις επαναλαμβανόμενη τυχαιότητα. Αυτό μπορεί να είναι χρήσιμο για πολλά διαφορετικά πράγματα, όπως:</p>
 
-- για την τοποθέτηση αντικειμένων στην οθόνη. Αν [σχεδιάζεις τον νυχτερινό ουρανό](https://trinket.io/python/c67c589510?outputOnly=true&runOption=run){target="_blank"}, δεν θέλεις να επιλέγεις πού τοποθετείται το κάθε αστέρι!
-- στη ρίψη ζαριών με εξαπάτηση στο έργο [Γεια σου Κόσμε](https://projects.raspberrypi.org/en/projects/hello-world)
-- για να δημιουργήσεις κόσμους (όπως στο Minecraft), καθορίζοντας πού τοποθετούνται τυχαία οι πόροι και τα πλάσματα
+- για την τοποθέτηση αντικειμένων στην οθόνη. If you're drawing an asteroid field, you don't want to pick where each rock goes!
+
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/dodge-asteroids-example" width="600" height="700" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+</iframe>
+
+- as a cheat, like with the dice roll in the [Hello World](https://projects.raspberrypi.org/en/projects/hello-world) project
+- to create worlds (like in Minecraft), deciding where resources and creatures are randomly placed
 
 
 Ακολουθεί ένα παράδειγμα που χρησιμοποιεί τη συνάρτηση `seed` με εξαπάτηση:
