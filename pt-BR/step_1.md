@@ -1,8 +1,12 @@
 Ao criar números aleatórios com Python, você pode usar uma **seed** para gerar os números. Se você começar da mesma seed e pedir a mesma sequência de números, poderá criar uma pseudo aleatoriadades. Algo que parece aleatório, mas não é. Isso pode ser útil para muitas coisas diferentes, incluindo:
 
-- para posicionar objetos na tela. Se você está [desenhando o céu noturno](https://trinket.io/python/c67c589510?outputOnly=true&runOption=run){:target="_blank"}, você não quer escolher para onde cada estrela vai!
-- para uma trapaça, como com o lançamento de dados no projeto [Hello World](https://projects.raspberrypi.org/en/projects/hello-world)
-- para criar mundos (como no Minecraft), decidindo onde os recursos e as criaturas são colocadas aleatoriamente
+- para posicionar objetos na tela. If you're drawing an asteroid field, you don't want to pick where each rock goes!
+
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/dodge-asteroids-example" width="600" height="700" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+</iframe>
+
+- as a cheat, like with the dice roll in the [Hello World](https://projects.raspberrypi.org/en/projects/hello-world) project
+- to create worlds (like in Minecraft), deciding where resources and creatures are randomly placed
 
 
 Aqui está um exemplo usando `seed` como trapaça:
@@ -14,8 +18,8 @@ from random import randint, seed
 def load_dice():
   # Configura uma seed para sempre escolher o mesmo número
   seed('dice')
-  roll = randint(1,6)
-  print('Você rola', rola)
+  rola = randint(1,6)
+  print('Você tirou o número', rola)
 
 ```
 Este código gera:
