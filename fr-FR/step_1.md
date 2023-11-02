@@ -1,8 +1,12 @@
 Lors de la création de nombres aléatoires avec Python, tu peux utiliser **seed** pour générer les nombres. Si tu pars du même seed et demandes la même séquence de nombres, tu peux créer un caractère aléatoire imprévisible. Cela peut être utile pour de nombreuses choses différentes, notamment :
 
-- pour positionner des objets sur l'écran. Si tu [dessines le ciel nocturne](https://trinket.io/python/c67c589510?outputOnly=true&runOption=run){:target="_blank"}, tu ne veux pas choisir où va chaque étoile !
-- comme un tricheur, comme avec le lancer de dés dans le projet [Hello World](https://projects.raspberrypi.org/en/projects/hello-world)
-- pour créer des mondes (comme dans Minecraft), en décidant où les ressources et les créatures sont placées au hasard
+- pour positionner des objets sur l'écran. If you're drawing an asteroid field, you don't want to pick where each rock goes!
+
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/dodge-asteroids-example" width="600" height="700" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+</iframe>
+
+- as a cheat, like with the dice roll in the [Hello World](https://projects.raspberrypi.org/en/projects/hello-world) project
+- to create worlds (like in Minecraft), deciding where resources and creatures are randomly placed
 
 
 Voici un exemple utilisant `seed` comme un tricheur :
