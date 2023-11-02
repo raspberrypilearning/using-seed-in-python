@@ -1,11 +1,15 @@
-Si quieres crear números aleatorios con Python, puedes usar la función **seed** (semilla) para generar los números. Si comienzas desde la misma seed (semilla) y pides la misma secuencia de números, puedes crear una aleatoriedad repetible. Esto te puede ser útil para muchas cosas, incluyendo las siguientes:
+Si quieres crear números aleatorios con Python, puedes usar la función **semillas** para generar los números. Si comienzas desde la misma y pides la misma secuencia de números, puedes crear una aleatoriedad repetible. Esto te puede ser útil para muchas cosas, incluyendo las siguientes:
 
-- para posicionar objetos en la pantalla. Si estás trabajando en el proyecto [dibujando el cielo nocturno](https://trinket.io/python/c67c589510?outputOnly=true&runOption=run){:target="_blank"}, ¡no querrás elegir la posición para cada estrella!
-- para usar como atajo, como cuando tires los dados en el proyecto [Hola Mundo](https://projects.raspberrypi.org/en/projects/hello-world)
-- para crear mundos (como en Minecraft), decidiendo aleatoriamente la ubicación de los recursos y las criaturas
+- para posicionar objetos en la pantalla. If you're drawing an asteroid field, you don't want to pick where each rock goes!
+
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/dodge-asteroids-example" width="600" height="700" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+</iframe>
+
+- as a cheat, like with the dice roll in the [Hello World](https://projects.raspberrypi.org/en/projects/hello-world) project
+- to create worlds (like in Minecraft), deciding where resources and creatures are randomly placed
 
 
-A continuación hay un ejemplo donde se usa `seed` (semilla) como atajo:
+A continuación hay un ejemplo donde se usa `semillas` como atajo:
 
 ```python
 
@@ -24,4 +28,4 @@ Este código da como resultado:
 Sacaste un 4
 ```
 
-**Sugerencia:** Seed (semilla) puede ser un número o una cadena de texto. ¡Eso significa que también puede ser un emoji!
+**Consejo:** La semilla puede ser un número o una cadena de texto. ¡Eso significa que también puede ser un emoticón!
