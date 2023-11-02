@@ -2,7 +2,7 @@ Podczas tworzenia liczb losowych w Pythonie możesz użyć metody **seed** do wy
 
 - do pozycjonowania obiektów na ekranie. If you're drawing an asteroid field, you don't want to pick where each rock goes!
 
-<iframe src="https://editor.raspberrypi.org/en/embed/viewer/dodge-asteroids-example" width="600" height="700" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+<iframe src="https://editor.raspberrypi.org/pl-PL/embed/viewer/dodge-asteroids-example" width="600" height="700" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
 
 - as a cheat, like with the dice roll in the [Hello World](https://projects.raspberrypi.org/pl-PL/projects/hello-world) project
