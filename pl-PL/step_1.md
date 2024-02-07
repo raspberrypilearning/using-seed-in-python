@@ -1,12 +1,12 @@
 Podczas tworzenia liczb losowych w Pythonie możesz użyć metody **seed** do wygenerowania liczb. Jeśli wykorzystasz ten sam seed i poprosisz o taką samą sekwencję liczb, możesz stworzyć powtarzalną losowość. To może być przydatne do wielu różnych rzeczy, w tym:
 
-- do pozycjonowania obiektów na ekranie. If you're drawing an asteroid field, you don't want to pick where each rock goes!
+- do pozycjonowania obiektów na ekranie. Jeśli rysujesz pole asteroid, nie chcesz wybierać, dokąd zmierza każdy kamień!
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/dodge-asteroids-example" width="600" height="700" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
 
-- as a cheat, like with the dice roll in the [Hello World](https://projects.raspberrypi.org/en/projects/hello-world) project
-- to create worlds (like in Minecraft), deciding where resources and creatures are randomly placed
+- jako oszustwo, jak przy rzucie kostką w projekcie [Hello World](https://projects.raspberrypi.org/en/projects/hello-world)
+- do tworzenia światów (jak w Minecrafcie), decydując o losowym umieszczeniu zasobów i stworzeń
 
 
 Oto przykład użycia `seed` jako oszustwo:
