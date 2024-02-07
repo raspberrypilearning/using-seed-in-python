@@ -1,31 +1,31 @@
-When creating random numbers with Python, you can use a **seed** to generate the numbers. If you start from the same seed, and ask for the same sequence of numbers, then you can create repeatable randomness. This can be useful for many different things including:
+Quando crei numeri casuali con Python, puoi impostare un seme con la funzione **seed** per generare i numeri. Se inizi dallo stesso seme e chiedi la stessa sequenza di numeri, puoi creare casualità ripetibile. Questo può essere utile per molte cose diverse, tra cui:
 
-- for positioning objects on the screen. If you're drawing an asteroid field, you don't want to pick where each rock goes!
+- per posizionare gli oggetti sullo schermo. Se stai disegnando un campo di asteroidi, non vuoi sicuramente decidere dove posizionare ogni singola roccia!
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/dodge-asteroids-example" width="600" height="700" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
 
-- as a cheat, like with the dice roll in the [Hello World](https://projects.raspberrypi.org/en/projects/hello-world) project
-- to create worlds (like in Minecraft), deciding where resources and creatures are randomly placed
+- come trucchetto, come abbiamo per il lancio dei dadi nel progetto [Hello World](https://projects.raspberrypi.org/en/projects/hello-world)
+- creare mondi (come in Minecraft), decidendo dove posizionare casualmente risorse e creature
 
 
-Here is an example using `seed` as a cheat:
+Ecco un esempio che utilizza `seed` come trucco:
 
 ```python
 
 from random import randint, seed
 
-def loaded_dice():
-  # Set a seed to always choose the same number
-  seed('dice')
-  roll = randint(1,6)
-  print('You rolled', roll)
+def lancia_dado():
+  # Imposta un seed per scegliere sempre lo stesso numero
+  seed('dadi')
+  lancio = randint(1,6)
+  print('Hai ottenuto', lancio)
 
 ```
-This code outputs:
+Questo codice restituisce:
 
 ```
-You rolled 4
+Hai ottenuto 4
 ```
 
-**Tip:** Seed can be a number, or a string of text. That means it can be an emoji too!
+**Suggerimento:** Il seme può essere un numero o una stringa di testo. Ciò significa che può essere anche un emoji!
